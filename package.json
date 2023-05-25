@@ -1,0 +1,50 @@
+{
+  "name": "@sidneys/logger-v2",
+  "version": "0.1.7",
+  "description": "ES2015-based convenience logging system",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/sidneys/logger-v2",
+  "author": {
+    "name": "sidneys",
+    "email": "sidneys.github.io@outlook.com",
+    "url": "https://bitbucket.org/sidneys"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/sidneys/logger-v2.git"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/sidneys/logger-v2/issues"
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">= 18.0.0",
+    "npm": ">= 8.0.0"
+  },
+  "os": [
+    "darwin",
+    "win32",
+    "linux"
+  ],
+  "keywords": [
+    "development",
+    "tools"
+  ],
+  "dependencies": {
+    "@sidneys/is-env": "^1.143.0",
+    "appdirectory": "^0.1.0",
+    "chalk": "4.1.2",
+    "electron-process-type": "^4.2.0",
+    "lodash": "^4.17.21",
+    "make-dir": "^3.1.0",
+    "moment": "^2.29.4",
+    "present": "^1.0.0",
+    "read-pkg-up": "7.0.1",
+    "root-path": "^0.2.1",
+    "unique-filename": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1"
+  },
+  "main": "./index.js"
+}
