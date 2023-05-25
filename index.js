@@ -19,8 +19,8 @@ const _ = require('lodash')
 const Appdirectory = require('appdirectory')
 const chalk = require('chalk')
 const { GetElectronProcessType } = require('electron-process-type/lib/v3')
-const isDebug = require('@sidneys/is-env')('debug')
-const isNolog = require('@sidneys/is-env')('nolog')
+const isDebug = require('@bengennaria/is-env')('debug')
+const isNolog = require('@bengennaria/is-env')('nolog')
 const moment = require('moment')
 const present = require('present')
 const readPkgUp = require('read-pkg-up')
@@ -93,11 +93,11 @@ const defaultLoggerOptions = {
 let initializeGlobals
 // eslint-disable-next-line no-unused-vars
 (initializeGlobals = () => {
-    // Check if 'global[@sidneys/logger]' exists
+    // Check if 'global[@bengennaria/logger]' exists
     if (global.hasOwnProperty(loggerPackageJson.name)) {
         return
     }
-    // Create object at key 'global[@sidneys/logger]'
+    // Create object at key 'global[@bengennaria/logger]'
     global[loggerPackageJson.name] = {}
     global[loggerPackageJson.name].configurations = new Map()
 })()
@@ -563,7 +563,7 @@ let createLoggerInstance = function(options = {}) {
     // Add configuration with filename as key to global[packageName].configurations
     global[loggerPackageJson.name].configurations.set(requiringPackage.path, configuration)
 
-    // This prevents '@sidneys/logger' from being added to the 'require.cache' object after having been required.
+    // This prevents '@bengennaria/logger' from being added to the 'require.cache' object after having been required.
     // This enables automatic log message prefixes, depending on from where a logging method was called.
     delete require.cache[__filename]
 

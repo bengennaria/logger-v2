@@ -1,20 +1,20 @@
 {
-  "name": "@sidneys/logger-v2",
+  "name": "@bengennaria/logger-v2",
   "version": "0.1.7",
   "description": "ES2015-based convenience logging system",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/sidneys/logger-v2",
+  "homepage": "https://github.com/bengennaria/logger-v2",
   "author": {
-    "name": "sidneys",
-    "email": "sidneys.github.io@outlook.com",
-    "url": "https://bitbucket.org/sidneys"
+    "name": "bengennaria",
+    "email": "ben.gennaria@gmail.com",
+    "url": "https://github.com/bengennaria"
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/sidneys/logger-v2.git"
+    "url": "https://github.com/bengennaria/logger-v2.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/sidneys/logger-v2/issues"
+    "url": "https://github.com/bengennaria/logger-v2/issues"
   },
   "deprecated": false,
   "engines": {
@@ -31,7 +31,7 @@
     "tools"
   ],
   "dependencies": {
-    "@sidneys/is-env": "^1.143.0",
+    "@bengennaria/is-env": "git+https://bengennaria@github.com/bengennaria/is-env.git",
     "appdirectory": "^0.1.0",
     "chalk": "4.1.2",
     "electron-process-type": "^4.2.0",
