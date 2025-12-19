@@ -31,7 +31,7 @@
     "tools"
   ],
   "dependencies": {
-    "@bengennaria/is-env": "git+https://bengennaria@github.com/bengennaria/is-env.git",
+    "@bengennaria/is-env": "github:bengennaria/is-env",
     "appdirectory": "^0.1.0",
     "chalk": "4.1.2",
     "electron-process-type": "^4.2.0",
